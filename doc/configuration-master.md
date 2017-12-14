@@ -1,7 +1,7 @@
 # Overview
 Configuration master manages all of the cluster information in a Zookeeper ensemble. It consists of multiple instances of configuration master process, whose role is a leader or a follower. Each instance monitors the cluster components via an application level heart-beat messaging. The leader instance determines the component state and does failover if needed.
 
-Configuration master also provides the gateway information of each cluster to C and Java clients. Each client watches the Zookeeper node and got notified when there is a change on any gateway.
+Configuration master also provides the gateway information of each cluster to C and Java clients. Each client watch the Zookeeper node and got notified when there is a change on any gateway.
 
 ![Configuration master](/doc/images/cm1.png)
 
